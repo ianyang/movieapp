@@ -5,7 +5,6 @@ require 'open-uri'
 
 get '/' do
   erb :home
-
 end
 
 def get_data(q)
@@ -21,7 +20,7 @@ get '/search' do
 end
 
 get '/movie' do
-  url = "http://www.omdbapi.com/?i=#{URI.escape(params[:id])}"
+  url = "http://www.omdbapi.com/?i=#{URI.escape(params[:id])}&tomatoes=true"
   @movie = JSON.load(open(url).read)
   erb :movie
 end

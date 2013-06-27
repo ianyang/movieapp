@@ -1,5 +1,6 @@
-<div class="Result"
-<header>Results for: <%= @query%></header>
+<div class="result">
+	<div><img src="http://www.fridgeplus.com/nostalgia-electrics/popcorn-machines/CCP-510-xl.jpg" /></div>
+	<h1>Results for: <%= @query%></h1>
 	<ol>
 		<% @movies.each do |movie| %>
 			<li><a href='/movie?id=<%=movie["imdbID"]%>'><%=movie["Title"]%></a></li>

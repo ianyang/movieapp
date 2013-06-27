@@ -7,14 +7,13 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div class="Header">
+		<header>
+			<div class="left"><a href="/"><p>h</p></a></div>
+			<div class="right"><p>movie selector</p></div>
+		</header>
+		<div class="container">
+			<div><%= yield %></div>
 		</div>
-		<div>
-			<%= yield %>
-
-
-		</div>
-		<div class="Footer">
-		</div>
+		<footer><p>@Designed by Ian Yang</p></footer>
 	</body>
 </html>
